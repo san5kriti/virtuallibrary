@@ -7,8 +7,17 @@ import styles from "../styles/Home.module.css";
 export default function VirtualLibrary() {
   return (
     <div className={styles.container}>
-      {/* Image Background */}
-      <img className={styles.imageBackground} src="/cat.png" alt="Background" />
+      {/* VIDEO Background */}
+      <video
+        className={styles.videoBackground}
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/cat.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       <div className={styles.overlay}></div>
 
@@ -29,6 +38,8 @@ export default function VirtualLibrary() {
         <TodoToggle />
         <AmbienceToggle />
       </div>
+
+      {/* Socials */}
       <div className={styles.contactWrapper}>
         <a href="https://www.linkedin.com/in/sanskritishelke/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin-in"></i>
