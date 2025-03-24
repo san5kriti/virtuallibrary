@@ -1,168 +1,311 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
+/* --- General Layout --- */
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  justify-content: space-between;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
+/* --- Hero Header --- */
+.heroTitle {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 20;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.heroTitle h1 {
+  font-family: 'League Spartan', sans-serif; /* Use League Spartan font */
+  font-size: 80px;
+  font-weight: 700; /* Make it bold */
+  line-height: 1;
+  text-transform: lowercase;
+  color: #f7b46f; /* Set the color to #f7b46f */
+}
+
+.heroTitle span {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+  font-weight: 700; /* Make it bolder */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
+.heroTitle h1, .heroTitle span {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
+/* --- Bottom Left Panel --- */
+.utilityPanel {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
   display: flex;
+  flex-direction: column;
   gap: 16px;
+  z-index: 15;
 }
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+/* --- Pill Button --- */
+/* --- Utility Button Styling --- */
+.utilityButton {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 12px;
   cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.utilityButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* --- Slide Panel --- */
+.ambienceWrapper {
+  position: relative;
+}
+
+.slidePanel {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Initially position the panel off-screen to the right */
   display: flex;
+  flex-direction: row; /* Make it horizontal */
+  gap: 12px; /* Adjust the gap between buttons */
+  background: none; /* No background */
+  border-radius: 10px;
+  padding: 10px;
+  width: auto; /* Allow the panel to adjust width based on content */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+  z-index: 100;
+}
+
+
+.ambienceWrapper .slidePanel {
+  left: calc(100% + 10px); /* Just a little gap between button and panel */
+}
+
+/* --- Sound Toggle Buttons --- */
+
+.soundToggle {
+  background: rgba(0, 0, 0, 0.5); /* Dark background */
+  padding: 10px 20px; /* Adjust the padding */
+  border: none;
+  border-radius: 30px; /* Pill shape */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
   gap: 8px;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
+
+.soundToggle:hover {
+  background: rgba(255, 255, 255, 0.15); /* Lighten the button on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
+
+/* Optional: Active state when the sound is playing (e.g. "Rain") */
+.soundToggle.active {
+  transform: scale(0.98);
+  background: #532112;
 }
 
-.footer a {
+/* Font icon size */
+.soundToggle span {
+  font-size: 18px; /* Make the icon a bit larger for better visual impact */
+}
+
+/* Focus outline when the button is selected */
+.soundToggle:focus {
+  outline: none;
+}
+
+/* --- Pomodoro Overlay (center modal) --- */
+/* --- Pomodoro Timer --- */
+.pomodoroTimer {
+  position: fixed;  /* Keeps it fixed in the top-right corner */
+  top: 100px;  /* Shift down a little */
+  right: 50px;  /* Shift left a little */
+  color: #fff;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  z-index: 100;
+}
+
+.pomodoroTimer h1 {
+  font-size: 120px; /* Large font for the timer */
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.pomodoroTimer span {
+  font-size: 24px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pomodoroTimer span:hover {
+  color: #f7b46f;
+}
+
+
+.pomodoroTimer .timerNumber {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.pomodoroTimer .startReset {
+  margin-top: 10px;
+}
+
+/* Position the To-Do drawer on the right side */
+.todoDrawer {
+  position: fixed; /* Fixed positioning to keep it in place */
+  top: 350px; /* Adjust top to be under the Pomodoro timer */
+  right: 50px; /* Align it to the right side */
+  width: 350px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  z-index: 15;
+  font-family: "Press Start 2P", monospace;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; /* Add margin to push the tasks lower */
+}
+.taskItem {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px; /* Space between tasks */
+}
+
+.taskInput {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Close button in the drawer */
+.closeBtn {
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.closeBtn:hover {
+  color: #fff;
+}
+
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #ff8080;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Styling for input and add button */
+.taskInput {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.addButton {
+  width: 100%;
+  background: #f7b46f;
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Header of the To-Do drawer */
+.dragHeader {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contactWrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 16px;
+  z-index: 100;
 }
 
-.footer img {
-  flex-shrink: 0;
+.contactWrapper a {
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.contactWrapper a:hover {
+  color: #f7b46f; /* Change the color on hover */
+  transform: translateY(-5px);
 }

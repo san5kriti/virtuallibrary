@@ -35,8 +35,58 @@ a {
   text-decoration: none;
 }
 
+/* Global font settings */
+.heroTitle h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 64px;
+  font-weight: 700; /* Bold */
+  line-height: 1;
+  text-transform: lowercase;
+  color: #f7b46f;
+}
+
+.heroTitle span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.heroTitle h1, .heroTitle span {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+@keyframes rainAnimation {
+  to {
+    transform: translateY(100vh); /* Move the raindrops down the screen */
+  }
+}
+
+.rain {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Light white for rain */
+  animation: rainAnimation linear infinite;
+  animation-duration: 0.5s;
+  opacity: 0.5;
+}
+
+.rain:nth-child(odd) {
+  left: 20%;
+  animation-duration: 0.7s; /* Faster rain effect for some drops */
+}
+
+.rain:nth-child(even) {
+  left: 80%;
+  animation-duration: 0.6s; /* Slower rain effect for others */
 }
