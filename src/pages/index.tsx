@@ -29,6 +29,23 @@ export default function VirtualLibrary() {
         <TodoToggle />
         <AmbienceToggle />
       </div>
+      <div className={styles.contactWrapper}>
+        <a href="https://www.linkedin.com/in/sanskritishelke/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/san5kriti/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="https://sanskritishelke.com/" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-globe"></i>
+        </a>
+        <a href="mailto:sanskritishelke.r@gmail.com">
+          <i className="fas fa-envelope"></i>
+        </a>
+        <a href="https://buymeacoffee.com/san5kriti" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-coffee"></i>
+        </a>
+      </div>
 
       {/* Copyright */}
       <footer className={styles.footer}>
