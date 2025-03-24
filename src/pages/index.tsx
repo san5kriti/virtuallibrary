@@ -1,4 +1,4 @@
-import Head from 'next/head'; // Make sure to import the Head component
+import Head from 'next/head';
 import AmbienceToggle from "../components/AmbienceToggle";
 import TodoToggle from "../components/TodoToggle";
 import PomodoroTimer from "../components/PomodoroTimer";
@@ -28,6 +28,11 @@ export default function VirtualLibrary() {
         <TodoToggle />
         <AmbienceToggle />
       </div>
+
+      {/* Copyright */}
+      <footer className={styles.footer}>
+        <p>&copy; {new Date().getFullYear()} Sanskriti Shelke. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }

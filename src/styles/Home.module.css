@@ -309,3 +309,13 @@
   color: #f7b46f; /* Change the color on hover */
   transform: translateY(-5px);
 }
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 10;
+}
