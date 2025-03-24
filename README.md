@@ -7,11 +7,13 @@
 ---
 
 ## 📜 **Tech Stack**
+<img align="right" width="120" alt="coffe" src="https://github.com/user-attachments/assets/ea7321e1-50e9-4db3-8a74-770c652792cd" />
 
 - **Frontend**:  
   - **React** (for building interactive user interfaces)
-  - **Next.js** (for server-side rendering and routing)
-  - **CSS Modules** (for scoped and modular styles)
+  - **Next.js** (for server-side rendering and routing)                          
+  - **CSS Modules** (for scoped and modular styles)                    
+
   - **Framer Motion** (for animations)
   - **Font Awesome** (for icons)
 
