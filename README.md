@@ -1,6 +1,6 @@
 <img width="1496" alt="Screenshot 2025-03-24 at 3 53 18 AM" src="https://github.com/user-attachments/assets/4c28a255-0278-48bf-9f99-df7dd14780fc" /># **Virtual Library**
 
-# **Virtual Library** 🏛️☕️
+ **Virtual Library** 🏛️☕️
 
 **Virtual Library** is an interactive web application that provides a unique blend of productivity tools and ambient sounds for the ultimate study or work experience. With features like a Pomodoro Timer, To-Do List, and a wide variety of ambient sounds, the Virtual Library creates the perfect environment for anyone looking to stay focused, organized, and productive.
 
@@ -65,8 +65,6 @@ The interface is designed with a dark theme, complemented by smooth animations a
 
 ## 🔗 **Quick Links**
 
-## 🔗 **Quick Links**
-
 <p align="center">
   <a href="https://github.com/san5kriti" target="_blank">
     <button style="background-color: #333; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">
@@ -94,7 +92,7 @@ The interface is designed with a dark theme, complemented by smooth animations a
 
 ## 👨‍💻 **Author**
 
-- **Sanskriti Shelke**
+ **Sanskriti Shelke**
 - [GitHub](https://github.com/san5kriti)
 - [LinkedIn](https://www.linkedin.com/in/sanskritishelke/)
 - [Website](https://sanskritishelke.com/)
