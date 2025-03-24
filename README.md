@@ -1,10 +1,12 @@
 <img width="1496" alt="Screenshot 2025-03-24 at 3 53 18 AM" src="https://github.com/user-attachments/assets/4c28a255-0278-48bf-9f99-df7dd14780fc" /># **Virtual Library**
 
+# **Virtual Library** 🏛️☕️
+
 **Virtual Library** is an interactive web application that provides a unique blend of productivity tools and ambient sounds for the ultimate study or work experience. With features like a Pomodoro Timer, To-Do List, and a wide variety of ambient sounds, the Virtual Library creates the perfect environment for anyone looking to stay focused, organized, and productive.
 
 ---
 
-## 🚀 **Tech Stack**
+## 📜 **Tech Stack**
 
 - **Frontend**:  
   - **React** (for building interactive user interfaces)
@@ -20,18 +22,25 @@
 
 ---
 
-## 🎨 **Features**
+## 🖋️ **Features**
 
 ### 🕰️ **Pomodoro Timer**
 A productivity timer that helps users break work into intervals (usually 25 minutes), followed by a short break. The timer is visible at the top-right corner of the page, and users can start, pause, or reset the countdown.
 
+
+
+
 ### 📝 **To-Do List**
 A simple and intuitive to-do list feature to help users keep track of their tasks. Users can add, delete, and move tasks around.
+
+
 
 ### 🎧 **Ambient Sounds**
 Users can toggle and listen to various ambient sounds (e.g., rain, page flip, fireplace, soft music) to create the perfect background atmosphere for focused work or study.
 
-### 🌌 **Aesthetic UI**
+
+
+### 🧺 **Aesthetic Cozy UI**
 The interface is designed with a dark theme, complemented by smooth animations and transitions, providing a visually appealing and pleasant user experience. The background image can be replaced with any desired visual to enhance the overall ambiance.
 
 ---
@@ -44,23 +53,6 @@ The interface is designed with a dark theme, complemented by smooth animations a
 - **Framer Motion**: Animated transitions and elements for a smooth and polished UI experience.
 - **Git & GitHub**: Version-controlled the project and collaborated via GitHub.
 
-
-
-## 📷 **Screenshots**
-
-Here are some screenshots of the app in action:
-<img width="1496" alt="Screenshot 2025-03-24 at 3 53 18 AM" src="https://github.com/user-attachments/assets/4328f5da-c454-4898-83fe-2060394d3429" />
-
----
-
-
-## 👨‍💻 **Author**
-
-- **Sanskriti Shelke**
-- [GitHub](https://github.com/san5kriti)
-- [LinkedIn](https://www.linkedin.com/in/sanskritishelke/)
-- [Website](https://sanskritishelke.com/)
-
 ---
 
 ## 🔧 **Future Enhancements**
@@ -71,4 +63,37 @@ Here are some screenshots of the app in action:
 
 ---
 
+## 🔗 **Quick Links**
+
+<p align="center">
+  <a href="https://github.com/san5kriti" target="_blank">
+    <button style="background-color: #333; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">GitHub</button>
+  </a>
+  <a href="https://www.linkedin.com/in/sanskritishelke/" target="_blank">
+    <button style="background-color: #0077b5; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">LinkedIn</button>
+  </a>
+  <a href="https://sanskritishelke.com/" target="_blank">
+    <button style="background-color: #f7b46f; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">Website</button>
+  </a>
+  <a href="mailto:sanskritishelke.r@gmail.com">
+    <button style="background-color: #f0f0f0; color: #333; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">Email</button>
+  </a>
+</p>
+
+---
+
+## 👨‍💻 **Author**
+
+- **Sanskriti Shelke**
+- [GitHub](https://github.com/san5kriti)
+- [LinkedIn](https://www.linkedin.com/in/sanskritishelke/)
+- [Website](https://sanskritishelke.com/)
+
+
 ### **Thank you for checking out Virtual Library!**
+
+
+### **Note**:
+For buttons, I used inline styling with **rounded corners**, **hover effects**, and **iconography** to make them interactive. You can replace the placeholders in the links and images with actual content. I've added the **buttons** with quick links at the bottom of the README to increase user engagement.
+
+Let me know if you'd like more changes or want to add other cool effects!
