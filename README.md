@@ -65,18 +65,28 @@ The interface is designed with a dark theme, complemented by smooth animations a
 
 ## 🔗 **Quick Links**
 
+## 🔗 **Quick Links**
+
 <p align="center">
   <a href="https://github.com/san5kriti" target="_blank">
-    <button style="background-color: #333; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">GitHub</button>
+    <button style="background-color: #333; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">
+      <i class="fab fa-github"></i> GitHub
+    </button>
   </a>
   <a href="https://www.linkedin.com/in/sanskritishelke/" target="_blank">
-    <button style="background-color: #0077b5; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">LinkedIn</button>
+    <button style="background-color: #0077b5; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </button>
   </a>
   <a href="https://sanskritishelke.com/" target="_blank">
-    <button style="background-color: #f7b46f; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">Website</button>
+    <button style="background-color: #f7b46f; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">
+      🌐 Website
+    </button>
   </a>
   <a href="mailto:sanskritishelke.r@gmail.com">
-    <button style="background-color: #f0f0f0; color: #333; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">Email</button>
+    <button style="background-color: #f0f0f0; color: #333; padding: 10px 20px; border-radius: 10px; font-size: 16px; cursor: pointer; margin: 10px;">
+      ✉️ Email
+    </button>
   </a>
 </p>
 
