@@ -63,30 +63,55 @@ a {
     color-scheme: dark;
   }
 }
-@keyframes rainAnimation {
-  to {
-    transform: translateY(100vh); /* Move the raindrops down the screen */
+/* ========================== */
+/*  RESPONSIVE BREAKPOINTS  */
+
+/* Tablet + Small Laptop */
+@media (max-width: 1200px) {
+  .heroTitle h1 {
+    font-size: 48px;
+  }
+  .heroTitle span {
+    font-size: 12px;
   }
 }
 
-.rain {
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* Light white for rain */
-  animation: rainAnimation linear infinite;
-  animation-duration: 0.5s;
-  opacity: 0.5;
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .heroTitle h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .heroTitle span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+  }
+
+  .toggles, .widgets {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .modal {
+    width: 90vw;
+    max-width: 400px;
+  }
+
+  /* Optional: hide sidebar on small screens */
+  .sidebar {
+    display: none;
+  }
 }
 
-.rain:nth-child(odd) {
-  left: 20%;
-  animation-duration: 0.7s; /* Faster rain effect for some drops */
-}
-
-.rain:nth-child(even) {
-  left: 80%;
-  animation-duration: 0.6s; /* Slower rain effect for others */
+/* Ultra Small Screens (e.g., iPhone SE) */
+@media (max-width: 480px) {
+  .heroTitle h1 {
+    font-size: 28px;
+  }
+  .heroTitle span {
+    font-size: 9px;
+  }
 }
