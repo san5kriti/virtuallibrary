@@ -52,7 +52,7 @@ const AmbienceToggle: React.FC = () => {
           <SoundToggle label="Rain" icon="🌧️" soundUrl="rain.wav" />
           <SoundToggle label="Page Flip" icon="📖" soundUrl="pageflip.wav" />
           <SoundToggle label="Fireplace" icon="🪵" soundUrl="fire-place.wav" />
-          <SoundToggle label="Typing" icon="⌨️" soundUrl="typing.wav" />
+          <SoundToggle label="Brown Noise" icon="🧸" soundUrl="brownnoise.mp3" />
           <SoundToggle label="Piano" icon="🎹" soundUrl="piano.wav" />
         </div>
       )}
