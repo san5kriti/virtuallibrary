@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<img width="1496" alt="Screenshot 2025-03-24 at 3 53 18 AM" src="https://github.com/user-attachments/assets/4c28a255-0278-48bf-9f99-df7dd14780fc" /># **Virtual Library**
 
-## Getting Started
+**Virtual Library** is an interactive web application that provides a unique blend of productivity tools and ambient sounds for the ultimate study or work experience. With features like a Pomodoro Timer, To-Do List, and a wide variety of ambient sounds, the Virtual Library creates the perfect environment for anyone looking to stay focused, organized, and productive.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 **Tech Stack**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend**:  
+  - **React** (for building interactive user interfaces)
+  - **Next.js** (for server-side rendering and routing)
+  - **CSS Modules** (for scoped and modular styles)
+  - **Framer Motion** (for animations)
+  - **Font Awesome** (for icons)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Tools and Libraries**:  
+  - **TypeScript** (for static typing)
+  - **GitHub** (for version control)
+  - **Vercel** (for deployment)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🎨 **Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🕰️ **Pomodoro Timer**
+A productivity timer that helps users break work into intervals (usually 25 minutes), followed by a short break. The timer is visible at the top-right corner of the page, and users can start, pause, or reset the countdown.
 
-## Learn More
+### 📝 **To-Do List**
+A simple and intuitive to-do list feature to help users keep track of their tasks. Users can add, delete, and move tasks around.
 
-To learn more about Next.js, take a look at the following resources:
+### 🎧 **Ambient Sounds**
+Users can toggle and listen to various ambient sounds (e.g., rain, page flip, fireplace, soft music) to create the perfect background atmosphere for focused work or study.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### 🌌 **Aesthetic UI**
+The interface is designed with a dark theme, complemented by smooth animations and transitions, providing a visually appealing and pleasant user experience. The background image can be replaced with any desired visual to enhance the overall ambiance.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💻 **Skills & Technologies Used**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend Development**: Built with **React** and **Next.js** to create a fast and scalable web application.
+- **TypeScript**: Added static typing to improve code reliability and reduce bugs.
+- **CSS Modules**: Used for scoped styling to maintain clean and modular styles.
+- **Framer Motion**: Animated transitions and elements for a smooth and polished UI experience.
+- **Git & GitHub**: Version-controlled the project and collaborated via GitHub.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+
+## 📷 **Screenshots**
+
+Here are some screenshots of the app in action:
+<img width="1496" alt="Screenshot 2025-03-24 at 3 53 18 AM" src="https://github.com/user-attachments/assets/4328f5da-c454-4898-83fe-2060394d3429" />
+
+---
+
+
+## 👨‍💻 **Author**
+
+- **Sanskriti Shelke**
+- [GitHub](https://github.com/san5kriti)
+- [LinkedIn](https://www.linkedin.com/in/sanskritishelke/)
+- [Website](https://sanskritishelke.com/)
+
+---
+
+## 🔧 **Future Enhancements**
+
+- Add more ambient sound options like nature, white noise, etc.
+- Implement a user authentication system for saving progress and tasks.
+- Mobile responsiveness for a seamless experience across devices.
+
+---
+
+### **Thank you for checking out Virtual Library!**
