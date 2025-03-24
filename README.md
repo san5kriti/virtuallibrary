@@ -76,7 +76,7 @@ The interface is designed with a dark theme, complemented by smooth animations a
 
 If you appreciate my work and would like to support the project, consider buying me a coffee!
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/sanskritishelke)
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/san5kriti)
 
 
 ### **Thank you for checking out Virtual Library!**
