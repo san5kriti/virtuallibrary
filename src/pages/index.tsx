@@ -20,6 +20,7 @@ export default function VirtualLibrary() {
       <div className={styles.heroTitle}>
         <h1>virtual<br />library</h1>
         <span>by Sans</span>
+        <img src="/coffe.gif" alt="cozy gif" className={styles.heroGif} />
       </div>
 
       {/* Utility Panel (bottom-left column) */}
