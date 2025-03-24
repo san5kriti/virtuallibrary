@@ -60,6 +60,7 @@ The interface is designed with a dark theme, complemented by smooth animations a
 - Add more ambient sound options like nature, white noise, etc.
 - Implement a user authentication system for saving progress and tasks.
 - Mobile responsiveness for a seamless experience across devices.
+- Gamify for the indie aesthetic
 
 ---
 
