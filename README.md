@@ -72,9 +72,14 @@ The interface is designed with a dark theme, complemented by smooth animations a
 - [LinkedIn](https://www.linkedin.com/in/sanskritishelke/)
 - [Website](https://sanskritishelke.com/)
 
+## 🤍 **Support the Project**
+
+If you appreciate my work and would like to support the project, consider buying me a coffee!
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/sanskritishelke)
+
 
 ### **Thank you for checking out Virtual Library!**
-
 
 ### **Note**:
 For buttons, I used inline styling with **rounded corners**, **hover effects**, and **iconography** to make them interactive. You can replace the placeholders in the links and images with actual content. I've added the **buttons** with quick links at the bottom of the README to increase user engagement.
