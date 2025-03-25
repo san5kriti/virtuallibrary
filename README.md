@@ -84,6 +84,5 @@ If you appreciate my work and would like to support the project, consider buying
 ### **Thank you for checking out Virtual Library!**
 
 ### **Note**:
-For buttons, I used inline styling with **rounded corners**, **hover effects**, and **iconography** to make them interactive. You can replace the placeholders in the links and images with actual content. I've added the **buttons** with quick links at the bottom of the README to increase user engagement.
+For buttons, I used inline styling with **rounded corners**, **hover effects**, and **iconography** to make them interactive. I've also made my own gifs and the background animation, feel free to reuse them but don't forget to credit! Happy coding 💗
 
-Let me know if you'd like more changes or want to add other cool effects!
