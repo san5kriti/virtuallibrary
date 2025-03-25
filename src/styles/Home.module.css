@@ -208,6 +208,23 @@
 .pomodoroTimer .startReset {
   margin-top: 10px;
 }
+.customInput {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputBox {
+  width: 60px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
 
 /* Position the To-Do drawer on the right side */
 .todoDrawer {
