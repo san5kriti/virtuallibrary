@@ -25,15 +25,16 @@
 ---
 
 ## 🖋️ **Features**
+note some features are yet to be implemented and improved!!
 
 ### 🕰️ **Pomodoro Timer**
-A productivity timer that helps users break work into intervals (usually 25 minutes), followed by a short break. The timer is visible at the top-right corner of the page, and users can start, pause, or reset the countdown.
+A productivity timer that helps users break work into intervals (usually 25 minutes). The timer is visible at the top-right corner of the page, and users can start, pause, and then reset the countdown.
 
 
 
 
 ### 📝 **To-Do List**
-A simple and intuitive to-do list feature to help users keep track of their tasks. Users can add, delete, and move tasks around.
+A simple and intuitive to-do list feature to help users keep track of their tasks. Users can add and delete tasks around.
 
 
 
