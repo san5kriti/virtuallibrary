@@ -3,7 +3,7 @@ import AmbienceToggle from "../components/AmbienceToggle";
 import TodoToggle from "../components/TodoToggle";
 import PomodoroTimer from "../components/PomodoroTimer";
 import styles from "../styles/Home.module.css";
-
+import { Analytics } from "@vercel/analytics/react";
 export default function VirtualLibrary() {
   return (
     <div className={styles.container}>
@@ -34,6 +34,7 @@ export default function VirtualLibrary() {
 
       {/* Utility Panel (bottom-left column) */}
       <div className={styles.utilityPanel}>
+        
         <PomodoroTimer />
         <TodoToggle />
         <AmbienceToggle />
