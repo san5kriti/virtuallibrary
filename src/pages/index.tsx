@@ -4,26 +4,33 @@ import TodoToggle from "../components/TodoToggle";
 import PomodoroTimer from "../components/PomodoroTimer";
 import styles from "../styles/Home.module.css";
 import { Analytics } from "@vercel/analytics/react";
+
 export default function VirtualLibrary() {
   return (
     <div className={styles.container}>
-      {/* VIDEO Background */}
-      <video
-        className={styles.videoBackground}
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source src="/cat.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* IMAGE Background */}
+      <div
+        className={styles.imageBackground}
+        style={{
+          backgroundImage: "url('/1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+        }}
+      ></div>
 
       <div className={styles.overlay}></div>
 
       {/* Hero Title */}
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet" />
+        <title>Virtual Library by Sans</title>
       </Head>
 
       <div className={styles.heroTitle}>
@@ -34,7 +41,6 @@ export default function VirtualLibrary() {
 
       {/* Utility Panel (bottom-left column) */}
       <div className={styles.utilityPanel}>
-        
         <PomodoroTimer />
         <TodoToggle />
         <AmbienceToggle />
@@ -63,6 +69,8 @@ export default function VirtualLibrary() {
       <footer className={styles.footer}>
         <p>&copy; {new Date().getFullYear()} Sanskriti Shelke. All Rights Reserved.</p>
       </footer>
+
+      <Analytics />
     </div>
   );
 }
