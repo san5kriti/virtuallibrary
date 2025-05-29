@@ -12,7 +12,7 @@ export default function VirtualLibrary() {
       <div
         className={styles.imageBackground}
         style={{
-          backgroundImage: "url('/1.png')",
+          backgroundImage: "url('/image.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
